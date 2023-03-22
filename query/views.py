@@ -20,7 +20,7 @@ class ParamsQueryView(APIView):
                         status=status.HTTP_200_OK)
 
     def post(self, request):
-        print(request.data)
+        # print(request.data)
         param_list = ['name', 'code', 'formula', 'molecular_weight', 'curve_data', 'type', 'safety_index',
                       'env_impact_index']
         params = []
